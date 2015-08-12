@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>GameRoom</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
+        
+        <script src="cordova.js"></script>
+        <link href="libs/style.css" rel='stylesheet' type='text/css' />
+        <link href="libs/bootstrap.css" rel='stylesheet' type='text/css' />
+        <link href="libs/jquery.mobile-1.4.5.css" rel='stylesheet' type='text/css' />
+        <link href="libs/room.css" rel="stylesheet" type="text/css" />
+        <script src="libs/handlebars-v3.0.3.js" type="text/javascript"></script>
+        <script type="text/javascript" src="libs/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="libs/jquery.mobile-1.4.5.js"></script>
+        <script type="text/javascript" src="libs/mobileroom.js"></script>
+        <script type="text/javascript" src="libs/bootstrap.js"></script>
+       
+
+    </head>
+    <body>
+        <div class="header" id="home">
+		<div class="container">
+			<div class="logo">
+				<a href="index.html"><img src="libs/images/logo-2.png" alt=""></a>
+			</div>
+			<div class="navigation">
+			 <span class="menu"></span> 
+				<ul class="navig">
+					<li><a class="active" href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="rules.html">Rules</a></li>
+					<li><a href="contact.html">Contact</a></li>
+                                        <li id="in"><a href="login.html">Login</a></li>
+                                        <li id="out"><a href="logout.html">Logout</a></li>
+                                         <li id="reg"><a href="register.html">Register</a></li>
+                                        
+				</ul>
+			</div>
+				 <!-- script-for-menu -->
+		 <script>
+				$("span.menu").click(function(){
+					$(" ul.navig").slideToggle("slow" , function(){
+					});
+				});
+		 </script>
+		 <!-- script-for-menu -->
+		</div>
+	</div>
+        
+        
+        
+        
+      <div class="banner" id="home">
+       <div class="container">
+			<div class="blog-top">
+                            <div>
+                                <div class="gallery-top heading">
+                                <h1 id="chattitle">SetGame Single Version</h1>
+                                </div>
+                                    <div class="gallery-bottom">
+                                    <div class="ui-grid-b">
+                                            <div class="ui-block-a">
+                                                    <img id="p0" src="libs/images/blank.gif">
+                                                    <input id="chkbx0" type="checkbox" style="display:none" name="choice" value="0" >
+                                            </div>
+                                            <div class="ui-block-b">
+                                                     <img id="p1" src="libs/images/blank.gif">
+                                                     <input id="chkbx1" type="checkbox" style="display:none" name="choice" value="1" >
+                                            </div>
+                                            <div class="ui-block-c">
+                                                     <img id="p2" src="libs/images/blank.gif">
+                                                        <input id="chkbx2" type="checkbox" style="display:none" name="choice" value="2" >
+                                            </div>
+                                           
+                                    </div>
+                                        
+                                   <div class="ui-grid-b">
+                                            <div class="ui-block-a">
+                                                     <img id="p3" src="libs/images/blank.gif">
+                                                     <input id="chkbx3" type="checkbox" style="display:none" name="choice" value="3" >
+                                            </div>
+                                            <div class="ui-block-b">
+                                                     <img id="p4" src="libs/images/blank.gif">
+                                                     <input id="chkbx4" type="checkbox" style="display:none" name="choice" value="4" >
+                                            </div>
+                                            <div class="ui-block-c">
+                                             <img id="p5" src="libs/images/blank.gif">
+                                                     <input id="chkbx5" type="checkbox" style="display:none" name="choice" value="5">
+                                            </div>
+
+                                    </div>
+                                    <div class="ui-grid-b">
+                                            <div class="ui-block-a">
+                                                     <img id="p6" src="libs/images/blank.gif">
+                                                     <input id="chkbx6" type="checkbox" style="display:none" name="choice" value="6" >
+                                            </div>
+                                             <div class="ui-block-b">
+                                                     <img id="p7" src="libs/images/blank.gif">
+                                                     <input id="chkbx7" type="checkbox" style="display:none" name="choice" value="7" >
+                                            </div>
+                                             <div class="ui-block-c">
+                                                     <img id="p8" src="libs/images/blank.gif">
+                                                     <input id="chkbx8" type="checkbox" style="display:none" name="choice" value="8" >
+                                            </div>
+                                    </div>
+                                        <div class="ui-grid-b">
+                                            <div class="ui-block-a">
+                                                     <img id="p9" src="libs/images/blank.gif">
+                                                     <input id="chkbx9" type="checkbox"  style="display:none" name="choice" value="9" >
+                                            </div>
+                                            <div class="ui-block-b">
+                                                     <img id="p10" src="libs/images/blank.gif">
+                                                     <input id="chkbx10" type="checkbox" style="display:none" name="choice" value="10">
+                                            </div>
+                                            <div class="ui-block-c">
+                                                     <img id="p11" src="libs/images/blank.gif">
+                                                     <input id="chkbx11" type="checkbox" style="display:none" name="choice" value="11">
+                                            </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                       
+                                    </div>
+                                
+			</div>
+                                  
+
+                            
+                            
+                        <div class="col-md-3 blog-right">
+					<div class="categories">
+						
+                                                    <div class="b-btn">
+                                                    <a id="hint" class="btn btn-success" rel="popover" data-img0="img/1.gif" data-img1="img/2.gif" data-img2="img/3.gif" >Give Me Five</a>
+                                                    </div>
+                                                        <div class="b-btn">
+                                                            <input type="hidden"  id="a" name="a" value="0">
+                                                            <input type="hidden"  id="b" name="b" value="1">
+                                                            <input type="hidden"  id="c" name="c" value="2">                                                            
+                                                            <a name="dochk" id="submit" onclick="" />Submit</a>
+                                                        </div>
+						<p id="flag" style="color: red"></p>
+					</div>
+                                        <div class="categories">
+						
+                                                        <div id="xxxs"></div>
+           
+
+						
+					</div>
+                                        <table class="col-md-3 blog-right">
+					<p id="resultdemo"></p> 
+					<div class="clearfix"></div>
+                                        </table>   
+				</div>
+                        <div class="clearfix"></div>
+                     </div>
+       </div>	
+</div>
+        
+        
+        
+        
+        
+ <div class="footer">
+		<div class="container">
+			<div class="footer-top">
+				<div class="col-md-4 footer-left">
+					<p>Design by Team9</p>
+				</div>
+				<div class="col-md-4 footer-left">
+					<h3>Follow Us</h3>
+					<ul>
+						<li><a href="#"><span class="fb"> </span></a></li>
+						<li><a href="#"><span class="twit"> </span></a></li>
+						<li><a href="#"><span class="google"> </span></a></li>
+						<li><a href="#"><span class="pin"> </span></a></li>
+					</ul>
+				</div>
+				<div class="col-md-4 footer-left">
+					<h3>Address</h3>
+					<p>NUS ISS, 
+					<span>25 Heng Mui Keng Terrace</span>
+					</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	</div>       
+
+    </body>
+</html>
